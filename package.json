@@ -1,0 +1,44 @@
+{
+  "name": "@rahulxf/random-user-agent",
+  "version": "1.0.0",
+  "description": "Generate random user agent",
+  "keywords": [
+    "user-agent",
+    "puppeteer",
+    "scraping",
+    "random-user-agent"
+  ],
+  "homepage": "https://github.com/manzil-infinity180/random-user-agent",
+  "bugs": {
+    "url": "https://github.com/manzil-infinity180/random-user-agent/issues"
+  },
+  "author": "Rahul Vishwakarma <rahulvs2809@gmail.com> (https://rahulxf.tech)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manzil-infinity180/random-user-agent.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "test": "vitest run",
+    "dev": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
+    "@changesets/cli": "^2.27.10",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.7"
+  }
+}
