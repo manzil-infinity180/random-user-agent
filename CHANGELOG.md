@@ -1,5 +1,11 @@
 # @rahulxf/random-user-agent
 
+## 1.2.0
+
+### Minor Changes
+
+- d5bfada: feat: added new function
+
 ## 1.1.2
 
 ### Patch Changes
