@@ -1,5 +1,11 @@
 # @rahulxf/random-user-agent
 
+## 1.1.1
+
+### Patch Changes
+
+- 323eed5: minor fixes
+
 ## 1.1.0
 
 ### Minor Changes
