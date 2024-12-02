@@ -1,5 +1,11 @@
 # @rahulxf/random-user-agent
 
+## 1.1.2
+
+### Patch Changes
+
+- 9ccb466: fix the export
+
 ## 1.1.1
 
 ### Patch Changes
