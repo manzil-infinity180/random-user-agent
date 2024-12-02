@@ -1,3 +1,9 @@
+/**
+ *
+ * @param count
+ * @returns string[]
+ * @note This will return bunch of user agents
+ */
 export function generateUserAgents(count: number): string[] {
   const userAgents: string[] = [];
   const baseOS = [
@@ -28,4 +34,18 @@ export function generateUserAgents(count: number): string[] {
     userAgents.push(userAgent);
   }
   return userAgents;
+}
+
+function getRandomInt(max: number) {
+  return Math.floor(Math.random() * max);
+}
+/**
+ *
+ * @returns string | undefined
+ * @note This will be called for getting one user agent
+ */
+export function getUserAgent(max_count = 1000) {
+  const generateThousandUserAgent = generateUserAgents(max_count);
+  const randomNumber = getRandomInt(max_count);
+  return generateThousandUserAgent[randomNumber];
 }

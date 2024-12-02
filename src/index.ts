@@ -1,3 +1,3 @@
-import { generateUserAgents } from './generateUserAgents.js';
+import { generateUserAgents, getUserAgent } from './generateUserAgents.js';
 
-export { generateUserAgents };
+export { generateUserAgents, getUserAgent };

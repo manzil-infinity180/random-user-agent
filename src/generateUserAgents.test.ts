@@ -1,4 +1,4 @@
-import { generateUserAgents } from './generateUserAgents.js';
+import { generateUserAgents, getUserAgent } from './generateUserAgents.js';
 import { test, expect } from 'vitest';
 
 test('generate user agents', () => {
@@ -13,4 +13,14 @@ test('generate user agents contains value', () => {
   expect(randomUserAgent[0]).includes('(KHTML, like Gecko)');
   expect(randomUserAgent[0]).includes('Chrome/');
   expect(randomUserAgent[0]).includes('Safari/');
+  expect(Array.isArray(randomUserAgent)).toBe(true);
+});
+
+test('check for getUserAgent', () => {
+  const generateOneUserAgent = getUserAgent();
+  const generateUserAgentWithOptionalCount = getUserAgent(100);
+  expect(generateOneUserAgent).not.toBeUndefined();
+  expect(generateUserAgentWithOptionalCount).not.toBeUndefined();
+  expect(typeof generateOneUserAgent).toBe('string');
+  expect(typeof generateUserAgentWithOptionalCount).toBe('string');
 });
