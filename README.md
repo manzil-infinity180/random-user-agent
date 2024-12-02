@@ -4,9 +4,20 @@
 
 [![Github](https://github.com/manzil-infinity180/random-user-agent/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/manzil-infinity180/random-user-agent/actions/workflows/ci.yml)
 
-## Description
+### Description
 
-Get a random user agents
+A simple yet powerful NPM package to generate random user agents effortlessly. Whether you're working on web scraping, testing, or automation, this tool provides flexibility to create one or many user agents in seconds.
+
+---
+
+### Features
+
+- Generate single or multiple user agents.
+- Built with TypeScript for type safety and maintainability.
+- Tested with Vitest and formatted with Prettier for consistent code quality.
+- Fully automated CI/CD pipeline via GitHub Actions.
+
+---
 
 ## Getting Started
 
@@ -20,7 +31,7 @@ npm i @rahulxf/random-user-agent
 ```js
 import { generateUserAgents } from '@rahulxf/random-user-agent';
 
-// specify the count of user agent you want to generate (required)
+// Generate 5 user agents
 const value = generateUserAgents(5);
 console.log(value);
 ```
@@ -43,6 +54,8 @@ console.log(value);
 
 ---
 
+**Generate a single user agent:**
+
 - `getUserAgent()` method
 
 ```js
@@ -56,20 +69,56 @@ console.log(getUserAgent());
 console.log(getUserAgent(10));
 ```
 
-## Contributing
+### Development & Contribution
 
-To run the test suite, first install the dependencies:
+If you'd like to contribute or run the project locally:
 
-```bash
-git clone https://github.com/manzil-infinity180/random-user-agent.git
-cd random-user-agent
-npm install
-```
+1. Clone the repository:
 
-Then run `npm test`:
+   ```bash
+   git clone https://github.com/manzil-infinity180/random-user-agent.git
+   cd random-user-agent
+   npm install
+   ```
 
-```bash
-npm run test
-```
+2. Run tests:
 
-If you made any changes please commit the `changeset` also and then run `npm run ci` to check everything is ok
+   ```bash
+   npm run test
+   ```
+
+3. Ensure changes meet the project's standards:
+   ```bash
+   npm run ci
+   ```
+
+This project uses TypeScript for development, Vitest for testing, and Prettier for formatting. All contributions are welcome!
+
+---
+
+### Technology Stack
+
+- **Languages & Tools:** TypeScript, JavaScript, Node.js
+- **Testing:** Vitest
+- **Code Formatting:** Prettier
+- **Automation:** GitHub Actions
+
+---
+
+### Package Details
+
+Here's an overview of the key NPM scripts included:
+
+| Script          | Description                                        |
+| --------------- | -------------------------------------------------- |
+| `build`         | Compiles TypeScript files to JavaScript.           |
+| `ci`            | Runs all checks (build, format, exports, tests).   |
+| `format`        | Formats code using Prettier.                       |
+| `test`          | Runs tests using Vitest.                           |
+| `local-release` | Handles changeset versioning and local publishing. |
+
+---
+
+### License
+
+This project is licensed under the **MIT License**, allowing developers to use, modify, and share freely.
