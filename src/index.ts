@@ -1,1 +1,4 @@
-export { add } from './utils.js';
+import { generateUserAgents } from './generateUserAgents.js';
+
+const values = generateUserAgents(10);
+console.log(values);
