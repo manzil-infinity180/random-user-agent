@@ -52,6 +52,99 @@ console.log(value);
 <img src="./src/result.png" alt="result-image" />
 </p>
 
+## Other Example
+
+```ts
+console.log({
+  generateAndroidAgents: generateAndroidAgents(10),
+  generateEdgeAgents: generateEdgeAgents(10),
+  generateFirefoxAgents: generateFirefoxAgents(10),
+  'generateUserAgentOnType:Firefox': generateUserAgentOnType({
+    options: {
+      type: 'firefox',
+    },
+  }),
+  'generateUserAgentOnType:Chrome': generateUserAgentOnType({
+    options: {
+      type: 'chrome',
+    },
+  }),
+  'generateUserAgentOnType:Android': generateUserAgentOnType({
+    options: {
+      type: 'android',
+    },
+  }),
+  'generateUserAgentOnType:edge': generateUserAgentOnType({
+    options: {
+      type: 'edge',
+    },
+  }),
+  getAndroidAgent: getAndroidAgent(),
+  getEdgeAgent: getEdgeAgent(),
+  getFirefoxAgent: getFirefoxAgent(),
+  generateUserAgents: generateUserAgents(10),
+  getUserAgent: getUserAgent(),
+  generateUserAgentRandom: generateUserAgentRandom(),
+});
+```
+
+Result
+
+```bash
+{
+  generateAndroidAgents: [
+    'Mozilla/5.0 (Linux; Android 12; moto g pure) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 12; moto g stylus 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 12; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36',
+    ... more items
+  ],
+
+  generateEdgeAgents: [
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.457.29 Safari/537.36 Edg/114.457.29',
+    'Mozilla/5.0 (X11; Ubuntu i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.427.17 Safari/537.36 Edg/111.427.17',
+    'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.303.22 Safari/537.36 Edg/115.303.22',
+    ... more items
+  ],
+
+  generateFirefoxAgents: [
+    'Mozilla/5.0 (X11; Linux x86_64; rv:110.0) Gecko/20100101 Firefox/110.0',
+    'Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:104.0) Gecko/20100101 Firefox/104.0',
+    ... more items
+  ],
+
+  'generateUserAgentOnType:Firefox': 'Mozilla/5.0 (Windows NT 11.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0',
+  'generateUserAgentOnType:Chrome': 'Mozilla/5.0 (X11; Fedora i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.374.92 Safari/537.36',
+  'generateUserAgentOnType:Android': 'Mozilla/5.0 (Linux; Android 13; SM-A536B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36',
+  'generateUserAgentOnType:edge': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.216.30 Safari/537.36 Edg/114.216.30',
+  getAndroidAgent: 'Mozilla/5.0 (Linux; Android 13; Pixel 6 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36',
+  getEdgeAgent: 'Mozilla/5.0 (X11; Ubuntu i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.362.48 Safari/537.36 Edg/111.362.48',
+  getFirefoxAgent: 'Mozilla/5.0 (X11; Linux x86_64; rv:115.0) Gecko/20100101 Firefox/115.0',
+
+  generateUserAgents: [
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.52 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.485.20 Safari/537.36',
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.355.31 Safari/537.36',
+    ... more items
+  ],
+
+  getUserAgent: 'Mozilla/5.0 (X11; Ubuntu i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.79.79 Safari/537.36',
+
+  generateUserAgentRandom: [
+    'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:113.0) Gecko/20100101 Firefox/113.0',
+    'Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:123.0) Gecko/20100101 Firefox/123.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:119.0) Gecko/20100101 Firefox/119.0',
+    'Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/109.0',
+    'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0',
+    ... 9992 more items
+  ]
+}
+```
+
 ---
 
 **Generate a single user agent:**

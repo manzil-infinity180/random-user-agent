@@ -1,3 +1,25 @@
-import { generateUserAgents, getUserAgent } from './generateUserAgents.js';
+import {
+  generateUserAgents,
+  getUserAgent,
+  generateAndroidAgents,
+  generateEdgeAgents,
+  generateFirefoxAgents,
+  generateUserAgentOnType,
+  getAndroidAgent,
+  getEdgeAgent,
+  getFirefoxAgent,
+  generateUserAgentRandom,
+} from './generateUserAgents.js';
 
-export { generateUserAgents, getUserAgent };
+export {
+  generateUserAgents,
+  getUserAgent,
+  generateAndroidAgents,
+  generateEdgeAgents,
+  generateFirefoxAgents,
+  generateUserAgentOnType,
+  getAndroidAgent,
+  getEdgeAgent,
+  getFirefoxAgent,
+  generateUserAgentRandom,
+};
