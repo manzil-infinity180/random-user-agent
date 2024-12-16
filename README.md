@@ -16,8 +16,19 @@ A simple yet powerful NPM package to generate random user agents effortlessly. W
 - Built with TypeScript for type safety and maintainability.
 - Tested with Vitest and formatted with Prettier for consistent code quality.
 - Fully automated CI/CD pipeline via GitHub Actions.
+- Generate user agent - Chrome, Firefox, Edge, Android
+- Customize Your User Agent and filter out which browser you want
+- All in one Random User Agent `generateUserAgentRandom`
 
 ---
+
+## Use this package with Puppeteer
+
+<a href="https://www.youtube.com/watch?v=hT6DTbC0w6s">
+<p align="center">
+<img src="./src/pupeeteer.png" alt="pupeeter-result-image" />
+</p>
+</a>
 
 ## Getting Started
 
@@ -53,6 +64,8 @@ console.log(value);
 </p>
 
 ## Other Example
+
+- Here is implementation of each and every things
 
 ```ts
 console.log({
@@ -144,6 +157,13 @@ Result
   ]
 }
 ```
+
+<!-- (https://github.com/user-attachments/assets/7a50a517-1600-4389-b8ab-8f9bc979f132) -->
+
+<video width="480" height="280" controls>
+  <source src="https://github.com/user-attachments/assets/7a50a517-1600-4389-b8ab-8f9bc979f132" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
