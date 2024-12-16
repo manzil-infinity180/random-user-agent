@@ -65,7 +65,21 @@ console.log(value);
 
 ## Other Example
 
-- Here is implementation of each and every things
+Here is implementation of each and every things
+
+| Function                  | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
+| `generateAndroidAgents`   | Generate android agents(>1), max_count is required field            |
+| `generateEdgeAgents`      | Generate edge agents(>1), max_count is required field               |
+| `generateFirefoxAgents`   | Generate firefox agents(>1), max_count is required field            |
+| `generateUserAgentOnType` | Generate user agent based on types(firefox, chrome, edge, android). |
+| `getAndroidAgent`         | get one android agent                                               |
+| `getEdgeAgent`            | get one edge agent                                                  |
+| `getFirefoxAgent`         | get one firefox agent                                               |
+| `getUserAgent`            | get one chrome agent                                                |
+| `generateUserAgentRandom` | generate random user agent include each types                       |
+
+> Example
 
 ```ts
 console.log({
