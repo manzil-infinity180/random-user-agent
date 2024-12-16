@@ -1,5 +1,11 @@
 # @rahulxf/random-user-agent
 
+## 1.3.0
+
+### Minor Changes
+
+- ccd48c1: added firefox, edge and android agents
+
 ## 1.2.0
 
 ### Minor Changes
