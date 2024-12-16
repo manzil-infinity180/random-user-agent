@@ -1,5 +1,11 @@
 # @rahulxf/random-user-agent
 
+## 1.3.1
+
+### Patch Changes
+
+- 180b594: add getting started and added demo video
+
 ## 1.3.0
 
 ### Minor Changes
